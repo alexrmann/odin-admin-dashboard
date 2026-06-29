@@ -20,7 +20,6 @@
     <div class="container container--layout">
       <header class="header header--dashboard">
         <div class="container container--sidebar sidebar">
-
           <div class="container sidebar__brand">
             <span class="brand__logo">
               <img src="assets/icons/badminton.svg" alt="" />
@@ -29,7 +28,6 @@
           </div>
 
           <nav class="container sidebar__nav nav">
-
             <section class="nav__section nav__section--features">
               <div class="nav__item item">
                 <div class="nav__icon icon">
@@ -39,7 +37,10 @@
               </div>
               <div class="nav__item item">
                 <div class="nav__icon icon">
-                  <img src="assets/icons/card-account-details.svg" alt="Profile icon" />
+                  <img
+                    src="assets/icons/card-account-details.svg"
+                    alt="Profile icon"
+                  />
                 </div>
                 <div class="item__name">Profile</div>
               </div>
@@ -63,7 +64,10 @@
               </div>
               <div class="nav__item item">
                 <div class="nav__icon icon">
-                  <img src="assets/icons/account-group.svg" alt="Communities icon" />
+                  <img
+                    src="assets/icons/account-group.svg"
+                    alt="Communities icon"
+                  />
                 </div>
                 <div class="item__name">Communities</div>
               </div>
@@ -89,9 +93,7 @@
                 <div class="item__name">Privacy</div>
               </div>
             </section>
-
           </nav>
-
         </div>
       </header>
       <main class="main workspace">
@@ -101,9 +103,9 @@
             <div class="toolbar toolbar--account">
               <div class="notifications"></div>
               <div class="user user--preferences">
-                <div class="user__avatar">
+                <div class="user--preferences__avatar">
                   <img
-                    src="/assets/avatar.jpg"
+                    src="/assets/avatars/pfp-2.jpg"
                     alt="Account avatar"
                     class="user__img"
                   />
@@ -114,9 +116,9 @@
           </div>
           <div class="container row row--bottom">
             <div class="user user--main">
-              <div class="user__avatar">
+              <div class="user--main__avatar">
                 <img
-                  src="/assets/avatar.jpg"
+                  src="/assets/avatars/pfp-2.jpg"
                   alt="Your avatar"
                   class="user__img"
                 />
@@ -138,109 +140,225 @@
         <div class="workspace__content">
           <section class="projects">
             <h2 class="heading--workspace">Your Projects</h2>
-            <article class="project">
-              <h3 class="project__title">Super Cool Project</h3>
-              <p class="project__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad ratione amet culpa veniam minus? Aliquam aliquid, quibusdam enim, nihil, tenetur veritatis magnam corrupti et sit libero accusamus totam? Autem.</p>
-              <div class="project__toolbar">
-                <div class="project__tool">
-                  <img src="/assets/icon-favorite.jpg" alt="Favorite project">
+            <div class="container container--projects container--content">
+              <article class="card project">
+                <div class="container--card-content">
+                  <h3 class="project__title">Super Cool Project</h3>
+                  <p class="project__excerpt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Inventore ad ratione amet culpa veniam minus? Aliquam
+                    aliquid, quibusdam enim, nihil, tenetur veritatis magnam
+                    corrupti et sit libero accusamus totam? Autem.
+                  </p>
+                  <div class="project__toolbar">
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/star-outline.svg"
+                        alt="Add to favorites"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/eye-outline.svg"
+                        alt="Watch this project"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/share-variant-outline.svg"
+                        alt="Share project"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-watch.jpg" alt="Watch project">
+              </article>
+              <article class="card project">
+                <div class="container--card-content">
+                  <h3 class="project__title">Less Cool Project</h3>
+                  <p class="project__excerpt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Inventore ad ratione amet culpa veniam minus? Aliquam
+                    aliquid, quibusdam enim, nihil, tenetur veritatis magnam
+                    corrupti et sit libero accusamus totam? Autem.
+                  </p>
+                  <div class="project__toolbar">
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/star-outline.svg"
+                        alt="Add to favorites"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/eye-outline.svg"
+                        alt="Watch this project"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/share-variant-outline.svg"
+                        alt="Share project"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-share.jpg" alt="Share project">
+              </article>
+              <article class="card project">
+                <div class="container--card-content">
+                  <h3 class="project__title">Impossible App</h3>
+                  <p class="project__excerpt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Inventore ad ratione amet culpa veniam minus? Aliquam
+                    aliquid, quibusdam enim, nihil, tenetur veritatis magnam
+                    corrupti et sit libero accusamus totam? Autem.
+                  </p>
+                  <div class="project__toolbar">
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/star-outline.svg"
+                        alt="Add to favorites"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/eye-outline.svg"
+                        alt="Watch this project"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/share-variant-outline.svg"
+                        alt="Share project"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <article class="project">
-              <h3 class="project__title">Less Cool Project</h3>
-              <p class="project__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad ratione amet culpa veniam minus? Aliquam aliquid, quibusdam enim, nihil, tenetur veritatis magnam corrupti et sit libero accusamus totam? Autem.</p>
-              <div class="project__toolbar">
-                <div class="project__tool">
-                  <img src="/assets/icon-favorite.jpg" alt="Favorite project">
+              </article>
+              <article class="card project">
+                <div class="container--card-content">
+                  <h3 class="project__title">Easy Peasy App</h3>
+                  <p class="project__excerpt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Inventore ad ratione amet culpa veniam minus? Aliquam
+                    aliquid, quibusdam enim, nihil, tenetur veritatis magnam
+                    corrupti et sit libero accusamus totam? Autem.
+                  </p>
+                  <div class="project__toolbar">
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/star-outline.svg"
+                        alt="Add to favorites"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/eye-outline.svg"
+                        alt="Watch this project"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/share-variant-outline.svg"
+                        alt="Share project"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-watch.jpg" alt="Watch project">
+              </article>
+              <article class="card project">
+                <div class="container--card-content">
+                  <h3 class="project__title">Ad Blocker</h3>
+                  <p class="project__excerpt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Inventore ad ratione amet culpa veniam minus? Aliquam
+                    aliquid, quibusdam enim, nihil, tenetur veritatis magnam
+                    corrupti et sit libero accusamus totam? Autem.
+                  </p>
+                  <div class="project__toolbar">
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/star-outline.svg"
+                        alt="Add to favorites"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/eye-outline.svg"
+                        alt="Watch this project"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/share-variant-outline.svg"
+                        alt="Share project"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-share.jpg" alt="Share project">
+              </article>
+              <article class="card project">
+                <div class="container--card-content">
+                  <h3 class="project__title">Money Maker</h3>
+                  <p class="project__excerpt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Inventore ad ratione amet culpa veniam minus? Aliquam
+                    aliquid, quibusdam enim, nihil, tenetur veritatis magnam
+                    corrupti et sit libero accusamus totam? Autem.
+                  </p>
+                  <div class="project__toolbar">
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/star-outline.svg"
+                        alt="Add to favorites"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/eye-outline.svg"
+                        alt="Watch this project"
+                      />
+                    </div>
+                    <div class="project__tool">
+                      <img
+                        class="icon"
+                        src="/assets/icons/share-variant-outline.svg"
+                        alt="Share project"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <article class="project">
-              <h3 class="project__title">Impossible App</h3>
-              <p class="project__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad ratione amet culpa veniam minus? Aliquam aliquid, quibusdam enim, nihil, tenetur veritatis magnam corrupti et sit libero accusamus totam? Autem.</p>
-              <div class="project__toolbar">
-                <div class="project__tool">
-                  <img src="/assets/icon-favorite.jpg" alt="Favorite project">
-                </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-watch.jpg" alt="Watch project">
-                </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-share.jpg" alt="Share project">
-                </div>
-              </div>
-            </article>
-            <article class="project">
-              <h3 class="project__title">Easy Peasy App</h3>
-              <p class="project__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad ratione amet culpa veniam minus? Aliquam aliquid, quibusdam enim, nihil, tenetur veritatis magnam corrupti et sit libero accusamus totam? Autem.</p>
-              <div class="project__toolbar">
-                <div class="project__tool">
-                  <img src="/assets/icon-favorite.jpg" alt="Favorite project">
-                </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-watch.jpg" alt="Watch project">
-                </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-share.jpg" alt="Share project">
-                </div>
-              </div>
-            </article>
-            <article class="project">
-              <h3 class="project__title">Ad Blocker</h3>
-              <p class="project__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad ratione amet culpa veniam minus? Aliquam aliquid, quibusdam enim, nihil, tenetur veritatis magnam corrupti et sit libero accusamus totam? Autem.</p>
-              <div class="project__toolbar">
-                <div class="project__tool">
-                  <img src="/assets/icon-favorite.jpg" alt="Favorite project">
-                </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-watch.jpg" alt="Watch project">
-                </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-share.jpg" alt="Share project">
-                </div>
-              </div>
-            </article>
-            <article class="project">
-              <h3 class="project__title">Money Maker</h3>
-              <p class="project__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad ratione amet culpa veniam minus? Aliquam aliquid, quibusdam enim, nihil, tenetur veritatis magnam corrupti et sit libero accusamus totam? Autem.</p>
-              <div class="project__toolbar">
-                <div class="project__tool">
-                  <img src="/assets/icon-favorite.jpg" alt="Favorite project">
-                </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-watch.jpg" alt="Watch project">
-                </div>
-                <div class="project__tool">
-                  <img src="/assets/icon-share.jpg" alt="Share project">
-                </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </section>
           <aside class="aside">
             <section class="annoucements">
               <h2 class="heading--workspace">Announcements</h2>
-              <div class="container container--announcements">
+              <div
+                class="container container--announcements container--content"
+              >
                 <article class="announcement">
                   <h3 class="announcement__title">Site Maintenance</h3>
                   <p class="announcement__excerpt">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aliquid consequatur officiis consectetur, suscipit, quisquam
-                    explicabo voluptates quas blanditiis non inventore, iste
-                    itaque reprehenderit commodi nihil ea fugiat perspiciatis
-                    iusto dolores.
+                    explicabo voluptates quas blanditiis non inventore...
                   </p>
                 </article>
                 <article class="announcement">
@@ -248,8 +366,7 @@
                   <p class="announcement__excerpt">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Obcaecati iusto incidunt similique culpa, magni ratione
-                    perferendis architecto ad neque delectus repudiandae, ab eos
-                    pariatur, dolor natus aut adipisci nemo nam!
+                    perferendis architecto ad neque delectus repudiandae...
                   </p>
                 </article>
                 <article class="announcement">
@@ -257,67 +374,67 @@
                   <p class="announcement__excerpt">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Deleniti expedita optio nam dolor obcaecati sunt
-                    consequuntur adipisci velit, non nobis itaque praesentium.
-                    Porro quam obcaecati quae blanditiis sunt distinctio
-                    deleniti?
+                    consequuntur adipisci velit, non nobis itaque praesentium...
                   </p>
                 </article>
               </div>
             </section>
             <section class="trending">
               <h2 class="heading--workspace">Trending</h2>
-              <article class="user user--trending">
-                <div class="user__avatar">
-                  <img
-                    src="/assets/avatar.jpg"
-                    alt="User avatar"
-                    class="user__img"
-                  />
-                </div>
-                <div class="user__info">
-                  <h3 class="user__handle">@tegan</h3>
-                  <p class="user__description">World Peace Builder</p>
-                </div>
-              </article>
-              <article class="user user--trending">
-                <div class="user__avatar">
-                  <img
-                    src="/assets/avatar.jpg"
-                    alt="User avatar"
-                    class="user__img"
-                  />
-                </div>
-                <div class="user__info">
-                  <h3 class="user__handle">@morgan</h3>
-                  <p class="user__description">Super Cool Project</p>
-                </div>
-              </article>
-              <article class="user user--trending">
-                <div class="user__avatar">
-                  <img
-                    src="/assets/avatar.jpg"
-                    alt="User avatar"
-                    class="user__img"
-                  />
-                </div>
-                <div class="user__info">
-                  <h3 class="user__handle">@kendall</h3>
-                  <p class="user__description">Life Changing App</p>
-                </div>
-              </article>
-              <article class="user user--trending">
-                <div class="user__avatar">
-                  <img
-                    src="/assets/avatar.jpg"
-                    alt="User avatar"
-                    class="user__img"
-                  />
-                </div>
-                <div class="user__info">
-                  <h3 class="user__handle">@alex</h3>
-                  <p class="user__description">No Traffic Maker</p>
-                </div>
-              </article>
+              <div class="container container--trending container--content">
+                <article class="user user--trending">
+                  <div class="user__avatar">
+                    <img
+                      src="/assets/avatars/pfp-1.jpg"
+                      alt="User avatar"
+                      class="user__img"
+                    />
+                  </div>
+                  <div class="user__info">
+                    <h3 class="user__handle">@tegan</h3>
+                    <p class="user__description">World Peace Builder</p>
+                  </div>
+                </article>
+                <article class="user user--trending">
+                  <div class="user__avatar">
+                    <img
+                      src="/assets/avatars/pfp-2.jpg"
+                      alt="User avatar"
+                      class="user__img"
+                    />
+                  </div>
+                  <div class="user__info">
+                    <h3 class="user__handle">@morgan</h3>
+                    <p class="user__description">Super Cool Project</p>
+                  </div>
+                </article>
+                <article class="user user--trending">
+                  <div class="user__avatar">
+                    <img
+                      src="/assets/avatars/pfp-3.jpg"
+                      alt="User avatar"
+                      class="user__img"
+                    />
+                  </div>
+                  <div class="user__info">
+                    <h3 class="user__handle">@kendall</h3>
+                    <p class="user__description">Life Changing App</p>
+                  </div>
+                </article>
+                <article class="user user--trending">
+                  <div class="user__avatar">
+                    <img
+                      src="/assets/avatars/pfp-4.jpg"
+                      alt="User avatar"
+                      class="user__img"
+                    />
+                  </div>
+                  <div class="user__info">
+                    <h3 class="user__handle">@alex</h3>
+                    <p class="user__description">No Traffic Maker</p>
+                  </div>
+                </article>
+              </div>
             </section>
           </aside>
         </div>
