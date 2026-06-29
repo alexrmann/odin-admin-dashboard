@@ -2,3 +2,14 @@ body {
   background-color: #FAFAFA;
   font-family: 'Roboto', sans-serif;
 }
+
+.nav__item {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.icon {
+  width: 32px;
+}
