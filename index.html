@@ -99,18 +99,26 @@
       <main class="main workspace">
         <header class="workspace__header">
           <div class="container row row--top">
-            <search></search>
+            <div class="search-bar">
+              <div class="icon icon--search">
+                <img src="/assets/icons/magnify.svg" alt="" />
+              </div>
+              <search class="search-input"></search>
+            </div>
+
             <div class="toolbar toolbar--account">
-              <div class="notifications"></div>
-              <div class="user user--preferences">
-                <div class="user--preferences__avatar">
+              <div class="icon notifications">
+                <img src="/assets/icons/bell-ring-outline.svg" alt="" />
+              </div>
+              <div class="user user-profile">
+                <div class="user-profile__avatar">
                   <img
                     src="/assets/avatars/pfp-2.jpg"
                     alt="Account avatar"
                     class="user__img"
                   />
                 </div>
-                <div class="user__name">Morgan Oakley</div>
+                <div class="user-profile__name">Morgan Oakley</div>
               </div>
             </div>
           </div>
@@ -123,10 +131,12 @@
                   class="user__img"
                 />
               </div>
-              <div class="user__text-block">
-                <p class="user__greeting">Hi there,</p>
-                <p class="user__name">
-                  Morgan Oakley (<span class="user__handle">@morgan</span>)
+              <div class="user-greeting">
+                <p class="user-greeting__greeting">Hi there,</p>
+                <p class="user-greeting__name">
+                  Morgan Oakley (<span class="user-greeting__handle"
+                    >@morgan</span
+                  >)
                 </p>
               </div>
             </div>

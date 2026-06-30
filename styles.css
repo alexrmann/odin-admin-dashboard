@@ -14,6 +14,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  font-family: "Roboto", sans-serif;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  margin: 0;
+}
+
 .container--layout {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -87,10 +95,81 @@ body {
 }
 
 .workspace__header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
   background-color: #fafafa;
   box-shadow: 0 0.25rem 0.25rem rgba(0 0 0 / 0.25);
 
   z-index: 998;
+}
+
+.row--top,
+.row--bottom {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  justify-items: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon--search {
+  width: 1.5rem;
+}
+
+.search-input {
+  background-color: #e2e8f0;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.toolbar--account {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-self: end;
+}
+
+.user-profile {
+  display: grid;
+  align-items: center;
+}
+
+.user-profile__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.user-greeting__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.button {
+  color: #fafafa;
+  background-color: #1992d4;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  width: 7rem;
+  height: 3rem;
+}
+
+.toolbar--workspace {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-self: end;
+  max-width: 26rem;
 }
 
 .workspace__content {
